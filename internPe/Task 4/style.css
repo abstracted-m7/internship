@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 5em;
+    display: grid;
+    place-items: center;
+    /* background-color: rgb(148, 227, 124); */
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-family:monospace;
+    font-size: 3.6em;
+    color: white;
+
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.6em;
+    font-family:monospace;
+    color: white;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border: 2px solid black;
+   width: 630px;
+   height: 40em;
+   background: linear-gradient(45deg, #0a0a0a, #286368);
+   box-shadow: 0 0 10px rgba(0,0,0,.5);
+   position: relative;
+   /* background-color: rgb(74, 74, 198); */
+   border-radius: 25px;
+    
+  
+}
+
+ul{
+    display: grid;
+    place-items: center;
+    
+}
+
+ul p{
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 200px;
+    background-color: white;
+}
+
+ul:hover{
+    cursor: pointer;
+    background-color: rgb(98, 136, 238);
+    border-radius: 200px;
+    }
+
+li{
+    list-style: none;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    color: white;
+    background-color: rgb(59, 242, 8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+footer.footer {
+    margin-top: 2em;
+    display:flex;
+    justify-content:center;
+    height:auto;
+    width: 100%;
+    background-color: #333333;
+}
+
+p.copyright {
+    color: #fff;
+    line-height: 40px;
+    font-size: 1.5em;
+}
+/* For Responsive */
+
+@media(max-width:700px){
+    .board{
+        width: 500px;
+    }
+    ul p{
+        width: 55px;
+        height: 55px;
+        
+    }
+    
+}
+@media(max-width:520px){
+    .board{
+        width: 400px;
+    }
+    ul p{
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+}
+@media(max-width:420px){
+    .board{
+        width: 320px;
+    }
+    ul p{
+        width: 30px;
+        height: 30px;
+        
+    }
+    
+}
