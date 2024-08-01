@@ -1,4 +1,5 @@
 📍Chat Box :
+
 💡Explanation of the Code
 
 This Python script is a basic chat application that can operate in either server or client mode. It uses the socket library for networking and Tkinter for the graphical user interface (GUI).
