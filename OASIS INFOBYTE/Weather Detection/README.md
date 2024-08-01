@@ -2,21 +2,21 @@
 
 💡Explanation :
 
-This Python script creates a weather application using Tkinter for the graphical user interface (GUI) and the requests library to fetch weather data from the OpenWeatherMap API. The application allows users to input a city name and retrieve the current weather information.
+This Python script creates a weather application using Tkinter for the graphical user interface (GUI) and the requests library to fetch weather data from the "weatherapi.com" API. The application allows users to input a city name and retrieve the current weather information.
 1. Import Statements:
 
     - tkinter: Used to create the GUI components (like windows, labels, buttons).
     - messagebox: Displays pop-up messages, such as errors or warnings.
-    - requests: Handles HTTP requests to the OpenWeatherMap API to fetch weather data.
+    - requests: Handles HTTP requests to the "weatherapi.com" API to fetch weather data.
 
 2. OpenWeatherMap API Configuration:
 
-    - API_KEY: Your unique API key from OpenWeatherMap. Replace this with your own key.
-    - API_URL: The base URL for the OpenWeatherMap API.
+    - API_KEY: Your unique API key from "weatherapi.com". Replace this with your own key.
+    - API_URL: The base URL for the "weatherapi.com" API.
 
 3. get_weather(city, units) Function:
 
-    - Sends an HTTP GET request to the OpenWeatherMap API with the specified city and unit parameters.
+    - Sends an HTTP GET request to the "weatherapi.com" API with the specified city and unit parameters.
     - Parameters:
         city: The city name entered by the user.
         units: Either 'metric' for Celsius or 'imperial' for Fahrenheit.
