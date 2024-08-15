@@ -1,0 +1,32 @@
+`Domain` : Software Development
+`Track Code` : SD
+
+Task 1 :
+ `Build A Temperature Conversion Program`
+
+Explain :
+ Create a program that converts temperatures between Celsius, Fahrenheite, and Kelvin Scales. The program should prompt the user to input a Temperature value and the original unit of measurement. It should then convert the temperature to the other two units and display the converted values to the user. For example, if the user enters a temperature of 25 degrees Celsius, the program should convert it to Fahrenheite and kelvin, and present the converted values as output.
+
+
+Task 2 :
+ `Create a Gussing Game`
+ 
+Explain :
+Build a program that generates a random number and challenges the user to guess it. The program should prompt the user to input their guess, compare it to the generated number and provide feedback if the guess is too high or too low. It should continue until the user correctly guesses the number and then display the number of attempts it took to win the game.
+
+Task 3 :
+ `Implement a Simple Contact Management System`
+ 
+Explain :
+Bulid a program that allows users to store and manage contact information. The program should provide options to ass a new contact by entering their name, phone number, and email address. It ahould also allow users to view their contact list, edit existing contacts, and delete contacts if needed. The program should store the contacts in memory or in a file for presistent storage.
+
+
+
+Importent part : 
+github repo name format : "PRODIGY_SD_TASKNUMBER"
+
+means :
+For Task 1 : PRODIGY_SD_Task1
+For Task 2 : PRODIGY_SD_Task2
+For Task 3 : PRODIGY_SD_Task3
+For Task 4 : PRODIGY_SD_Task4
