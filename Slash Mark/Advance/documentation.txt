@@ -1,0 +1,83 @@
+**Project Documentation: Airline Reservation System**
+Project Overview
+
+The Airline Reservation System is a Java application designed to manage flight reservations. It allows users to view available flights, book and cancel flights, and view booking details. The system uses CSV files for persistent data storage of flights and bookings.
+Features
+
+    Display Available Flights: Shows a list of available flights with details such as flight number, airline, origin, destination, and available seats.
+    Book a Flight: Allows users to book a flight by providing passenger details (name, email, phone number, PAN card, address, and ZIP code).
+    Cancel a Booking: Enables users to cancel a flight booking by providing the passenger’s name and PAN card.
+    Display Booking Details: Shows details of all bookings or a message if no bookings are available.
+
+System Components
+Classes
+
+    Flight
+        Attributes: flightNumber, airline, origin, destination, availableSeats
+        Methods:
+            bookSeat(): Decreases the number of available seats by 1.
+            cancelBooking(): Increases the number of available seats by 1.
+            toString(): Returns a string representation of the flight.
+
+    Booking
+        Attributes: passengerName, email, phoneNumber, panCard, address, zipCode, flightNumber, airline
+        Methods:
+            toString(): Returns a string representation of the booking.
+
+    AirlineReservationSystem
+        Attributes:
+            flights: List of Flight objects.
+            bookings: List of Booking objects.
+        Methods:
+            loadFlightsFromCSV(String fileName): Loads flight data from a CSV file.
+            loadBookingsFromCSV(String fileName): Loads booking data from a CSV file.
+            saveFlightsToCSV(String fileName): Saves flight data to a CSV file.
+            saveBookingsToCSV(String fileName): Saves booking data to a CSV file.
+            displayAvailableFlights(): Displays all available flights.
+            bookFlight(String flightNumber, String passengerName, String email, String phoneNumber, String panCard, String address, String zipCode): Books a flight for a passenger.
+            cancelBooking(String passengerName, String panCard): Cancels a booking based on passenger name and PAN card.
+            displayBookingDetails(): Displays all booking details or a message if no bookings are available.
+            main(String[] args): Provides a command-line interface for user interaction.
+
+Data Storage
+
+    Flights Data (flights.csv): Stores information about flights (flight number, airline, origin, destination, available seats).
+    Bookings Data (bookings.csv): Stores information about bookings (passenger name, email, phone number, PAN card, address, ZIP code, flight number, airline).
+
+Algorithm
+
+    Initialize System:
+        Load flight and booking data from CSV files.
+    Display Available Flights:
+        Iterate through the list of flights and print details.
+    Book a Flight:
+        Verify flight availability, book a seat, and add the booking.
+        Save updated data to CSV files.
+    Cancel a Booking:
+        Find the booking by passenger name and PAN card, remove it, and update seat availability.
+        Save updated data to CSV files.
+    Display Booking Details:
+        Print booking details or a message if no bookings are available.
+    Exit System:
+        Close resources and terminate the application.
+
+Usage Instructions
+
+    Compile and Run: Compile the Java files and run the AirlineReservationSystem class.
+    User Menu:
+        1: Display available flights.
+        2: Book a flight.
+        3: Cancel a booking.
+        4: Display booking details.
+        5: Exit the application.
+
+Error Handling
+
+    File Read/Write Errors: Basic handling for issues with reading from or writing to CSV files.
+    Flight Not Found: Notifies the user if a requested flight or booking cannot be found.
+
+Dependencies
+
+    Java JDK: Required for compiling and running the application.
+
+This documentation provides a clear and concise overview of the Airline Reservation System, including its features, components, data storage, algorithm, usage instructions, and error handling.
