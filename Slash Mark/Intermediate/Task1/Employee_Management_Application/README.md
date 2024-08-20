@@ -50,17 +50,29 @@
     #6. Exit Program:
             - End the program and close any open resources
 
-#Structure_of_the_programm :- 
+#Project_Overview:-
+#Name : Employee Management System
 
-Intermediate.Task1.Employee_Management_Application
-│
-├── Employee Class
-│   ├── Attributes: id, name, department, salary
-│   ├── Constructor: Employee(int id, String name, String department, double salary)
-│   ├── Methods: getId(), setId(int id), getName(), setName(String name), getDepartment(), setDepartment(String department), getSalary(), setSalary(double salary), toString()
-│
-└── EmployeeManagementSystem Class
-    ├── Attributes: ArrayList<Employee> employeeList
-    ├── Constructor: EmployeeManagementSystem()
-    ├── Methods: addEmployee(), viewEmployees(), updateEmployee(), deleteEmployee()
-    └── Main Method: main(String[] args)
+The Employee Management System is a Java-based application designed to streamline and simplify the management of employee information within an organization. This system allows administrators to efficiently add, view, update, and delete employee records, making it an essential tool for Human Resources (HR) departments.
+Key Features
+
+    - Add Employee: Easily add new employees to the system by providing details such as ID, name, department, and salary.
+    - View Employees: Display a list of all employees, including their key details.
+    - Update Employee: Modify existing employee records, including their name, department, and salary information.
+    - Delete Employee: Remove employee records from the system when they are no longer needed.
+    - User-Friendly Interface: The system features a text-based menu interface, making it easy to navigate through various options.
+
+Purpose
+
+The primary objective of this project is to provide a simple yet effective solution for managing employee records. This system is particularly useful for small to medium-sized organizations where maintaining a database of employee information is crucial. By automating these tasks, the system reduces the likelihood of errors and ensures that all employee data is up-to-date.
+Technology Stack
+
+    - Language: Java
+    - Libraries: Standard Java Libraries (e.g., java.util, java.io)
+    - Tools: Java Development Kit (JDK), Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse
+
+Future Enhancements
+
+    - Database Integration: Moving from in-memory storage to a persistent database to handle larger datasets.
+    - Role-Based Access: Implementing user roles (e.g., Admin, HR, Manager) with different levels of access and control.
+    - Graphical User Interface (GUI): Enhancing the user experience by adding a GUI, possibly using JavaFX or Swing.
