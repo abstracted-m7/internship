@@ -20,6 +20,12 @@ Task 3 :
 Explain :
 Bulid a program that allows users to store and manage contact information. The program should provide options to ass a new contact by entering their name, phone number, and email address. It ahould also allow users to view their contact list, edit existing contacts, and delete contacts if needed. The program should store the contacts in memory or in a file for presistent storage.
 
+Task 4 :
+  `Sudoku Solver`
+Explain :
+Create a program that solves sudoku puzzles automatically. The Program sholud take an input grid representing an unsolved sudoku puzzle and use an algorithm to fill in the missing numbers.
+
+It should use backtracking or other suitable techniques to explore possible solutions and find the correct arrengement of numbers for the puzzle. Once solved, the program sholud display the completed sudoku grid.
 
 
 Importent part : 
